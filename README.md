@@ -1,2 +1,3 @@
-# aprendendo-vuetify
-Repositório para projetos práticos quem envolvam Vuetify.
+# Aprendendo Vuetify
+
+### Repositório para projetos práticos que envolvam Vuetify.
