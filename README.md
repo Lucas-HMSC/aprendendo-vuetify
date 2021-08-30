@@ -14,6 +14,8 @@
     <img align="center" src="./demonstration/demonstration.gif" alt="GIF de demonstração da aplicação">
 </p>
 
+### [Clique aqui](https://aprendendo-vuetify.vercel.app/) para conferir a aplicação :) 
+
 ### Como executar
 
 - Clone o repositório
