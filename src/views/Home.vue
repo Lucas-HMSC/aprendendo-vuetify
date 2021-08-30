@@ -191,63 +191,63 @@ export default {
       users: [
         {
           name: 'Lindsey Stroud',
-          photo: 'https://github.com/vuejs.png',
+          photo: 'https://github.com/nomadtechie.png',
           email: 'lindsey.stroud@gmail.com',
           skills: 'Html, Vue, React, Angular',
           added: 'Jul 10 2021'
         },
         {
           name: 'Nicci Troiani',
-          photo: 'https://github.com/vuejs.png',
+          photo: 'https://github.com/sdras.png',
           email: 'nicci.troiani@gmail.com',
           skills: 'Html, Vue, React, Angular',
           added: 'Jun 05 2021'
         },
         {
           name: 'George Fields',
-          photo: 'https://github.com/vuejs.png',
+          photo: 'https://github.com/afontcu.png',
           email: 'george.fields@gmail.com',
           skills: 'Html, Vue, React, Angular',
           added: 'May 28 2021'
         },
         {
           name: 'Rebecca Moore',
-          photo: 'https://github.com/vuejs.png',
+          photo: 'https://github.com/lauragift21.png',
           email: 'rebecca.moore@gmail.com',
           skills: 'Html, Vue, React, Angular',
           added: 'May 14 2021'
         },
         {
           name: 'Jane Doe',
-          photo: 'https://github.com/vuejs.png',
+          photo: 'https://github.com/CodesOfRa.png',
           email: 'jane.dow@gmail.com',
           skills: 'Html, Vue, React, Angular',
           added: 'Apr 12 2021'
         },
         {
           name: 'Jones Dermot',
-          photo: 'https://github.com/vuejs.png',
+          photo: 'https://github.com/Akryum.png',
           email: 'jones.dermot@gmail.com',
           skills: 'Html, Vue, React, Angular',
           added: 'Mar 11 2021'
         },
         {
           name: 'Martin Merces',
-          photo: 'https://github.com/vuejs.png',
+          photo: 'https://github.com/bencodezen.png',
           email: 'martin.merces@gmail.com',
           skills: 'Html, Vue, React, Angular',
           added: 'Feb 09 2021'
         },
         {
-          name: 'Fraz Ferdinand',
-          photo: 'https://github.com/vuejs.png',
+          name: 'Franz Ferdinand',
+          photo: 'https://github.com/danielroe.png',
           email: 'franz.ferdinand@gmail.com',
           skills: 'Html, Vue, React, Angular',
           added: 'Feb 06 2021'
         },
         {
           name: 'John Smith',
-          photo: 'https://github.com/vuejs.png',
+          photo: 'https://github.com/chrisvfritz.png',
           email: 'john.smith@gmail.com',
           skills: '',
           added: 'Jan 30 2021',
@@ -297,7 +297,7 @@ export default {
           this.users = this.users.filter(user => user.email !== item.email);
         });
       }
-      toDelete = [];
+      this.selected = [];
     },
   },
 }
