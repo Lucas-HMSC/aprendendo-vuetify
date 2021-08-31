@@ -175,9 +175,9 @@ export default {
           sortable: true,
           value: 'name',
         },
-        { text: 'Email', value: 'email', sortable: false },
+        { text: 'Email', value: 'email', sortable: false, filterable: false },
         { text: 'Skills', value: 'skills', sortable: false, filterable: true },
-        { text: 'Adicionado em:', value: 'added', sortable: false },
+        { text: 'Adicionado em:', value: 'added', sortable: false, filterable: false },
       ],
       users: [
         {
