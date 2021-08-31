@@ -3,6 +3,7 @@
     <v-app-bar
       app
       flat
+      hide-on-scroll
       class="white"
     >
       <v-btn icon>
