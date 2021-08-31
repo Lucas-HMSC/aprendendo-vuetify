@@ -257,7 +257,7 @@ export default {
     },
   },
   methods: {
-    getDateFormatetd() {
+    getDateFormatted() {
       // Mon Aug 30 2021 15:38:39 GMT-0300 (Horário Padrão de Brasília)
       const date = new Date();
       const strDate = date.toString().slice(4, 15);
@@ -269,7 +269,7 @@ export default {
         this.newUser.email.length > 0 &&
         this.newUser.skills.length > 0 
       ) {
-        this.newUser.added = this.getDateFormatetd();
+        this.newUser.added = this.getDateFormatted();
         this.users.unshift(this.newUser);
         this.dialog = false;
         this.newUser = {
