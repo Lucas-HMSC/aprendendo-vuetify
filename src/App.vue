@@ -8,11 +8,11 @@
       <v-btn icon>
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
-      <!-- <v-toolbar-title>Pesquise por nome ou skills</v-toolbar-title> -->
       <v-text-field
         placeholder="Pesquise por nome ou skills"
         hide-details
         single-line
+        v-model='toSearch'
       ></v-text-field>
     </v-app-bar>
 
@@ -30,9 +30,13 @@
 
 export default {
   name: 'App',
-
+  watch: {
+    toSearch() {
+      this.$store.dispatch('updateSearch', this.toSearch);
+    },
+  },
   data: () => ({
-    //
+    toSearch: '',
   }),
 };
 </script>

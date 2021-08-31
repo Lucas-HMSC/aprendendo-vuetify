@@ -124,6 +124,7 @@
       v-model="selected"
       :headers="headers"
       :items="users"
+      :search='toSearch'
       item-key="name"
       show-select
       class="elevation-1"
@@ -137,16 +138,6 @@
         </v-avatar>
         {{ item.name }}
       </template>
-      <!-- <template v-slot:item.skills='{ item }'>
-        <v-chip
-          color="light-blue"
-          label
-          outlined
-          class="text-uppercase"
-        >
-          {{ item.skills.replace(/\,/g, '') }}
-        </v-chip>
-      </template> -->
       <template v-slot:item.skills='{ item }'>
         <v-chip
           color="light-blue"
@@ -181,12 +172,12 @@ export default {
         {
           text: 'Nome',
           align: 'start',
-          sortable: false,
+          sortable: true,
           value: 'name',
         },
-        { text: 'Email', value: 'email' },
-        { text: 'Skills', value: 'skills' },
-        { text: 'Adicionado em:', value: 'added' },
+        { text: 'Email', value: 'email', sortable: false },
+        { text: 'Skills', value: 'skills', sortable: false, filterable: true },
+        { text: 'Adicionado em:', value: 'added', sortable: false },
       ],
       users: [
         {
@@ -260,6 +251,9 @@ export default {
     isSelected() {
       if (this.selected.length > 0) return true;
       else return false;
+    },
+    toSearch() {
+      return this.$store.state.search;
     },
   },
   methods: {
