@@ -139,16 +139,20 @@
         {{ item.name }}
       </template>
       <template v-slot:item.skills='{ item }'>
-        <v-chip
-          color="light-blue"
-          label
-          outlined
-          class="mr-2 text-uppercase"
+        <span
           v-for='skill in item.skills.split(",")'
           :key='skill'
         >
-          {{ skill }}
-        </v-chip>
+          <v-chip
+            color="light-blue"
+            label
+            outlined
+            class="mr-2 text-uppercase"
+            v-if='skill.length > 0'
+          >
+            {{ skill }}
+          </v-chip>
+        </span>
       </template>
     </v-data-table>
   </div>
@@ -242,7 +246,7 @@ export default {
           email: 'john.smith@gmail.com',
           skills: '',
           added: 'Jan 30 2021',
-          skills: 'Html, Vue, React, Angular'
+          skills: ''
         },
       ],
     }
